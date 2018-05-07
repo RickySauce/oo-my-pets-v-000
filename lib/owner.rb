@@ -43,5 +43,12 @@ class Owner
   end
 
   def walk_dogs
+    @pets.each do |pets, animals|
+      if pets == :dogs
+      animals.each do |animal|
+        animal.mood = "happy"
+      end
+    end
   end
+
 end
